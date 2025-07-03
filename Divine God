@@ -1,86 +1,97 @@
 {
-    "id": "case_ares_vs_poseidon",
-    "title": "Ares vs Poseidon – Who Destroyed the Tavern?",
-    "description": "A tavern in the mortal realm lies in ruins. Two gods stand accused. Who is to blame?",
-    "images": [
-        {
-            "id": "zeus_throne",
-            "file": "zeus_throne.jpg",
-            "description": "Zeus observing the courtroom from his throne"
+  "id": "case_ares_vs_poseidon",
+  "title": "Ares vs Poseidon – Who Destroyed the Tavern?",
+  "scenes": [
+    {
+      "background": "tavern_bg",
+      "character": "zeus_throne",
+      "text": "A tavern in the mortal realm lies in ruins. Two gods stand accused. Who is to blame?"
+    },
+    {
+      "background": "tavern_bg",
+      "character": "ares",
+      "text": "Poseidon started it! He mocked my helmet, calling it a kettle!"
+    },
+    {
+      "background": "tavern_bg",
+      "character": "poseidon",
+      "text": "Ares threw a goblet at me first! His temper is worse than a storm!"
+    },
+    {
+      "background": "tavern_bg",
+      "character": "amphora",
+      "text": "Broken Amphora: Clearly marked as Dionysus's property. Possibly used as a projectile."
+    },
+    {
+      "background": "tavern_bg",
+      "character": "trident_mark",
+      "text": "Wet Trident Mark: Left on the tavern floor, indicating Poseidon's presence at the scene."
+    }
+  ],
+  "choices": [
+    {
+      "text": "Ares is guilty",
+      "outcome": {
+        "zeus_reaction": "angry",
+        "reputation": {
+          "hera": -5
         },
-        {
-            "id": "ares",
-            "file": "ares_battleworn.jpg",
-            "description": "Ares, with dented armor and fury in his eyes"
+        "note": "Ares storms off vowing war. Hera is displeased."
+      }
+    },
+    {
+      "text": "Poseidon is guilty",
+      "outcome": {
+        "zeus_reaction": "neutral",
+        "reputation": {
+          "fishermen": -5,
+          "zeus": 5
         },
-        {
-            "id": "poseidon",
-            "file": "poseidon_wetbeard.jpg",
-            "description": "Poseidon, dripping wet and fuming"
+        "note": "Poseidon summons a storm near Athens. Zeus gains strength, but mortals suffer."
+      }
+    },
+    {
+      "text": "Dionysus is guilty",
+      "requirement": "amphora_found",
+      "outcome": {
+        "zeus_reaction": "laughing",
+        "reputation": {
+          "zeus": 10
         },
-        {
-            "id": "amphora",
-            "file": "amphora_dionysus.png",
-            "description": "A broken amphora marked 'Property of Dionysus'"
-        },
-        {
-            "id": "trident_mark",
-            "file": "trident_mark.png",
-            "description": "A wet trident mark imprinted on the tavern floor"
-        }
-    ],
-    "testimonies": [
-        {
-            "character": "Ares",
-            "text": "Poseidon started it! He mocked my helmet, calling it a kettle!"
-        },
-        {
-            "character": "Poseidon",
-            "text": "Ares threw a goblet at me first! His temper is worse than a storm!"
-        }
-    ],
-    "evidence": [
-        {
-            "name": "Broken Amphora",
-            "detail": "Clearly marked as Dionysus's property. Possibly used as a projectile."
-        },
-        {
-            "name": "Wet Trident Mark",
-            "detail": "Left on the tavern floor, indicating Poseidon's presence at the scene."
-        }
-    ],
-    "choices": [
-        {
-            "text": "Ares is guilty",
-            "outcome": {
-                "zeus_reaction": "angry",
-                "reputation": {
-                    "hera": -5
-                },
-                "note": "Ares storms off vowing war. Hera is displeased."
-            }
-        },
-        {
-            "text": "Poseidon is guilty",
-            "outcome": {
-                "zeus_reaction": "neutral",
-                "reputation": {
-                    "fishermen": -5,
-                    "zeus": 5
-                },
-                "note": "Poseidon summons a storm near Athens. Zeus gains strength, but mortals suffer."
-            }
-        },
-        {
-            "text": "Dionysus is guilty",
-            "requirement": "if player found amphora",
-            "outcome": {
-                "zeus_reaction": "laughing",
-                "reputation": {
-                    "zeus": 10
-                },
-                "note": "Everyone laughs. Dionysus offers wine. Case dismissed."
-            }
-        }
-    ]
+        "note": "Everyone laughs. Dionysus offers wine. Case dismissed."
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "zeus_throne",
+      "file": "zeus_throne.jpg",
+      "description": "Zeus observing the courtroom from his throne"
+    },
+    {
+      "id": "ares",
+      "file": "ares_battleworn.jpg",
+      "description": "Ares, with dented armor and fury in his eyes"
+    },
+    {
+      "id": "poseidon",
+      "file": "poseidon_wetbeard.jpg",
+      "description": "Poseidon, dripping wet and fuming"
+    },
+    {
+      "id": "amphora",
+      "file": "amphora_dionysus.png",
+      "description": "A broken amphora marked 'Property of Dionysus'"
+    },
+    {
+      "id": "trident_mark",
+      "file": "trident_mark.png",
+      "description": "A wet trident mark imprinted on the tavern floor"
+    },
+    {
+      "id": "tavern_bg",
+      "file": "tavern_bg.jpg",
+      "description": "Interior of a ruined tavern, dark wood and broken tables"
+    }
+  ]
 }
