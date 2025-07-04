@@ -3,28 +3,28 @@
   "title": "Ares vs Poseidon – Who Destroyed the Tavern?",
   "scenes": [
     {
-      "background": "tavern_bg",
-      "character": "zeus_throne",
-      "text": "Zeus: Another ruined tavern... This time, two gods are involved. Let the court begin!"
+      "background": "zeus_throne_bg",
+      "character": "zeus_pointing",
+      "text": "Zeus: Another ruined tavern... Two gods stand accused. Let the court begin!"
     },
     {
       "background": "tavern_bg",
-      "character": "ares_angry",
+      "character": "ares",
       "text": "Ares: Poseidon mocked my helmet again! He called it a 'bronze kettle' in front of mortals!"
     },
     {
       "background": "tavern_bg",
-      "character": "poseidon_smug",
+      "character": "poseidon",
       "text": "Poseidon: I only spoke the truth. Ares then hurled a goblet at me!"
     },
     {
       "background": "tavern_bg",
-      "character": "ares_raging",
+      "character": "ares",
       "text": "Ares: You flooded the entire hall with your storm tantrum!"
     },
     {
       "background": "tavern_bg",
-      "character": "poseidon_wave",
+      "character": "poseidon",
       "text": "Poseidon: My beard is still wet! You threw Dionysus' amphora at my face!"
     },
     {
@@ -44,7 +44,7 @@
     },
     {
       "background": "tavern_bg",
-      "character": "zeus_judging",
+      "character": "zeus_pointing",
       "text": "Zeus: Enough! I will now hear the verdicts..."
     }
   ],
