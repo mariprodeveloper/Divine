@@ -1,97 +1,97 @@
 {
-  "id": "case_ares_vs_poseidon",
+  "id": "case_ares_vs_poseidon_tavern",
   "title": "Ares vs Poseidon – Who Destroyed the Tavern?",
   "scenes": [
     {
       "background": "tavern_bg",
       "character": "zeus_throne",
-      "text": "A tavern in the mortal realm lies in ruins. Two gods stand accused. Who is to blame?"
+      "text": "Zeus: Another ruined tavern... This time, two gods are involved. Let the court begin!"
     },
     {
       "background": "tavern_bg",
-      "character": "ares",
-      "text": "Poseidon started it! He mocked my helmet, calling it a kettle!"
+      "character": "ares_angry",
+      "text": "Ares: Poseidon mocked my helmet again! He called it a 'bronze kettle' in front of mortals!"
     },
     {
       "background": "tavern_bg",
-      "character": "poseidon",
-      "text": "Ares threw a goblet at me first! His temper is worse than a storm!"
+      "character": "poseidon_smug",
+      "text": "Poseidon: I only spoke the truth. Ares then hurled a goblet at me!"
     },
     {
       "background": "tavern_bg",
-      "character": "amphora",
-      "text": "Broken Amphora: Clearly marked as Dionysus's property. Possibly used as a projectile."
+      "character": "ares_raging",
+      "text": "Ares: You flooded the entire hall with your storm tantrum!"
     },
     {
       "background": "tavern_bg",
-      "character": "trident_mark",
-      "text": "Wet Trident Mark: Left on the tavern floor, indicating Poseidon's presence at the scene."
+      "character": "poseidon_wave",
+      "text": "Poseidon: My beard is still wet! You threw Dionysus' amphora at my face!"
+    },
+    {
+      "background": "tavern_bg",
+      "character": "",
+      "text": "Clue: A broken amphora lies shattered across the floor."
+    },
+    {
+      "background": "tavern_bg",
+      "character": "",
+      "text": "Clue: A damp trident imprint glistens near the bar counter."
+    },
+    {
+      "background": "tavern_bg",
+      "character": "dionysus_tipsy",
+      "text": "Dionysus (from behind a barrel): I don’t remember much... but someone owes me a new amphora."
+    },
+    {
+      "background": "tavern_bg",
+      "character": "zeus_judging",
+      "text": "Zeus: Enough! I will now hear the verdicts..."
     }
   ],
   "choices": [
     {
-      "text": "Ares is guilty",
+      "text": "Declare Ares guilty",
       "outcome": {
         "zeus_reaction": "angry",
         "reputation": {
-          "hera": -5
+          "hera": -5,
+          "ares": -3
         },
-        "note": "Ares storms off vowing war. Hera is displeased."
+        "note": "Ares storms out, threatening to start a war on Olympus. Hera disapproves."
       }
     },
     {
-      "text": "Poseidon is guilty",
+      "text": "Blame Poseidon",
       "outcome": {
         "zeus_reaction": "neutral",
         "reputation": {
-          "fishermen": -5,
+          "fishermen": -10,
           "zeus": 5
         },
-        "note": "Poseidon summons a storm near Athens. Zeus gains strength, but mortals suffer."
+        "note": "Poseidon unleashes storms over Athens. Zeus gains energy, but mortals suffer."
       }
     },
     {
-      "text": "Dionysus is guilty",
-      "requirement": "amphora_found",
+      "text": "Blame Dionysus (requires both clues)",
+      "requirement": "amphora_found && trident_mark_found",
       "outcome": {
         "zeus_reaction": "laughing",
         "reputation": {
-          "zeus": 10
+          "zeus": 10,
+          "dionysus": -2
         },
-        "note": "Everyone laughs. Dionysus offers wine. Case dismissed."
+        "note": "Everyone laughs. Dionysus offers wine. The case is dismissed in good spirits."
       }
-    }
-  ],
-  "assets": [
-    {
-      "id": "zeus_throne",
-      "file": "zeus_throne.jpg",
-      "description": "Zeus observing the courtroom from his throne"
     },
     {
-      "id": "ares",
-      "file": "ares_battleworn.jpg",
-      "description": "Ares, with dented armor and fury in his eyes"
-    },
-    {
-      "id": "poseidon",
-      "file": "poseidon_wetbeard.jpg",
-      "description": "Poseidon, dripping wet and fuming"
-    },
-    {
-      "id": "amphora",
-      "file": "amphora_dionysus.png",
-      "description": "A broken amphora marked 'Property of Dionysus'"
-    },
-    {
-      "id": "trident_mark",
-      "file": "trident_mark.png",
-      "description": "A wet trident mark imprinted on the tavern floor"
-    },
-    {
-      "id": "tavern_bg",
-      "file": "tavern_bg.jpg",
-      "description": "Interior of a ruined tavern, dark wood and broken tables"
+      "text": "Send everyone to the Tavern of Dionysus",
+      "outcome": {
+        "zeus_reaction": "amused",
+        "reputation": {
+          "zeus": 0
+        },
+        "note": "Statues of gods dance, wine flows endlessly. Case ends in divine chaos."
+      }
     }
   ]
 }
