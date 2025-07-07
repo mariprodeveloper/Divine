@@ -1,6 +1,16 @@
 {
   "id": "case_ares_vs_poseidon_tavern",
   "title": "Ares vs Poseidon – Who Destroyed the Tavern?",
+  "evidence": [
+    {
+      "id": "amphora_found",
+      "image": "broken_amphora"
+    },
+    {
+      "id": "trident_mark_found",
+      "image": "trident_mark"
+    }
+  ],
   "scenes": [
     {
       "background": "zeus_throne_bg",
@@ -30,12 +40,14 @@
     {
       "background": "tavern_bg",
       "character": "",
-      "text": "Clue: A broken amphora lies shattered across the floor."
+      "text": "",
+      "evidence_id": "amphora_found"
     },
     {
       "background": "tavern_bg",
       "character": "",
-      "text": "Clue: A damp trident imprint glistens near the bar counter."
+      "text": "",
+      "evidence_id": "trident_mark_found"
     },
     {
       "background": "tavern_bg",
