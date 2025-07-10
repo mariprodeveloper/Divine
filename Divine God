@@ -77,7 +77,7 @@
       "outcome": {
         "zeus_reaction": "neutral",
         "reputation": {
-          "fishermen": -10,
+          "Poseidon": -10,
           "zeus": 5
         },
         "note": "Poseidon unleashes storms over Athens. Zeus gains energy, but mortals suffer."
